@@ -14,4 +14,3 @@
     service: "{{ service }}"
     hip_profiles: 'any'
     action: "{{ firewall_action }}"
-    devicegroup: "{{ device_group }}"

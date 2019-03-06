@@ -5,16 +5,16 @@
     username: "{{ paloalto_username }}"
     password: "{{ paloalto_password }}"
     operation: 'add'
-    rule_name: "{{ firewall_rule_name }}"
-    description: 'Ansible Demo'
-    source_zone: "{{ source_zone }}"
-    destination_zone: "{{ dest_zone }}"
-    source_ip: "{{ srcip }}"
+    rule_name: 'Ansible test 1'
+    description: 'An Ansible test rule'
+    source_zone: ['untrust']
+    destination_zone: ['trust']
+    source_ip: ['any']
     source_user: ['any']
-    destination_ip: "{{ destip }}"
+    destination_ip: ['any']
     category: ['any']
-    application: "{{ application }}"
-    service: ['application-default']
+    application: ['any']
+    service: ['service-http']
     hip_profiles: ['any']
     action: 'allow'
     commit: 'False'

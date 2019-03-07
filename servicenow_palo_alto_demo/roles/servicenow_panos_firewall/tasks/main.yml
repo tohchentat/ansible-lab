@@ -28,11 +28,13 @@
       work_notes : "{{ change_request_id }} has been successfully implemented by Ansible"
   delegate_to: localhost
 
-- name: Sending notification email
+- name: Sending an e-mail using Gmail SMTP servers
   mail:
-    host: localhost
-    port: 25
-    to: Anthony Lin <tohchentat@gmail.com>
+    host: smtp.gmail.com
+    port: 587
+    username: tohchentat@gmail.com
+    password: K0ba!n661
+    to: Toh Chen Tat <chtoh@paloaltonetworks.com>
     subject: Ansible-report
     body: "{{ change_request_id }} has been successfully implemented on {{ firewall_node }}"
   delegate_to: localhost

@@ -6,8 +6,10 @@
     password: "{{ paloalto_password }}"
     operation: "{{ firewall_operation }}"
     rule_name: "{{ firewall_rule_name }}"
+    source_zone: "{{ source_zone }}"
     source_ip: "{{ src_ip }}"
     source_user: 'any'
+    destination_zone: "{{ dest_zone }}"
     destination_ip: "{{ dest_ip }}"
     category: 'any'
     application: "{{ app }}"

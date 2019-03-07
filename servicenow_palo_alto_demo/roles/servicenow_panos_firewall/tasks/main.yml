@@ -32,8 +32,8 @@
   mail:
     host: smtp.gmail.com
     port: 587
-    username: tohchentat@gmail.com
-    password: K0ba!n661
+    username: pansesglab@gmail.com
+    password: p@ssw0rd123$
     to: Toh Chen Tat <chtoh@paloaltonetworks.com>
     subject: Ansible-report
     body: "{{ change_request_id }} has been successfully implemented on {{ firewall_node }}"

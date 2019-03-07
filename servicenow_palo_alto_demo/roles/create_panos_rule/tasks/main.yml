@@ -16,5 +16,5 @@
     application: "{{ application }}"
     service: ['application-default']
     hip_profiles: ['any']
-    action: 'allow'
+    action: "{{ action }}"
     commit: 'False'

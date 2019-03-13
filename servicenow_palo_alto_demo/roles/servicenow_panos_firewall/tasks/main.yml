@@ -4,18 +4,18 @@
     ip_address: "{{ firewall_node }}"
     username: "{{ paloalto_username }}"
     password: "{{ paloalto_password }}"
-    operation: "{{ firewall_operation }}"
+    operation: 'any'
     rule_name: "{{ firewall_rule_name }}"
-    source_zone: "{{ source_zone }}"
+    source_zone: 'any'
     source_ip: "{{ src_ip }}"
     source_user: 'any'
-    destination_zone: "{{ dest_zone }}"
+    destination_zone: 'any'
     destination_ip: "{{ dest_ip }}"
     category: 'any'
     application: 'any'
     service: 'any'
     hip_profiles: 'any'
-    action: "{{ firewall_action }}"
+    action: 'allow'
 
 - name: Update State (to Review) and Work Notes of Change Request
   snow_record:

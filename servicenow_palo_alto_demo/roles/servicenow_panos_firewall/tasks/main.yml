@@ -24,7 +24,7 @@
     instance: "{{ servicenow_instance }}"
     state: present
     number: "{{ change_request_id }}"
-    table: change_request
+    table: "{{servicenow_table}}"
     data:
       state: 0
       work_notes : "{{ change_request_id }} has been successfully implemented by Ansible"

@@ -36,7 +36,7 @@
     port: 587
     username: pansesglab@gmail.com
     password: p@ssw0rd123$
-    to: Toh Chen Tat <chtoh@paloaltonetworks.com>
+    to: Administrator <pansesglab@gmail.com>
     subject: Ansible-report
     body: "{{ change_request_id }} has been successfully implemented on {{ firewall_node }}"
   delegate_to: localhost
